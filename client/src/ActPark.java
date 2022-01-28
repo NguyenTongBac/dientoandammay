@@ -183,7 +183,7 @@ public class ActPark extends JPanel {
 			txa_info.append("Loi: Vui long nhap vao thong diep! \n");
 			return;
 		}
-		connect2Server("127.0.0.1",2001);
+		connect2Server("14.163.200.227",2001);
 		shutdown();
 	}
 

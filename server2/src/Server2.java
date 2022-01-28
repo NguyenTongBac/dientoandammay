@@ -458,7 +458,7 @@ public class Server2 extends JFrame {
 		
 		GetState gs = new GetState("Server2");
 		gs.getCurrentCircle();
-		gs.sendUpdate("127.0.0.1",2003,"Server2");
+		gs.sendUpdate("116.105.173.174",2003,"Server2");
 								
 		ServerSocket server = new ServerSocket(2002);
 		while(true)

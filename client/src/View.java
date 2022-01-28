@@ -42,7 +42,7 @@ public class View extends JPanel {
     }
 
 	public void runClient(){
-		connect2Server("127.0.0.1",2003);
+		connect2Server("116.105.173.174",2003);
 		shutdown();
 	}
 
