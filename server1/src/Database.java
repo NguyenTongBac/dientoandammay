@@ -20,11 +20,11 @@ public class Database {
     		Class.forName(drivername).newInstance();
     		conn = DriverManager.getConnection(connectionURL,username,password);
  		   	stmt = conn.createStatement();
-				System.out.println("thanh cong");
+				// System.out.println("thanh cong");
     	}
     	catch (Exception ex) {
     		System.out.println("SQLException: " + ex.getMessage());
-			System.out.println("that bai");
+			// System.out.println("that bai");
     	}
     }	
     
@@ -58,11 +58,15 @@ public class Database {
 				num = rs.getString("bienso");
 				type = rs.getString("hieu");
 				clr = rs.getString("mau");
-				time = rs.getString("gio");				
+				time = rs.getString("gioden");				
 				st = st+pos+"|"+num+"|"+type+"|"+clr+"|"+time+"|";
 			}		
+			System.out.println("thanh cong");
 		}
-		catch(Exception e){}
+		catch(Exception e){
+			System.out.println("SQLException: " + e.getMessage());
+			System.out.println("that bai");
+		}
 		return st;		
 	}
 	

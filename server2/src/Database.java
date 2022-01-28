@@ -58,11 +58,13 @@ public class Database {
 				num = rs.getString("bienso");
 				type = rs.getString("hieu");
 				clr = rs.getString("mau");
-				time = rs.getString("gio");				
+				time = rs.getString("gioden");			
 				st = st+pos+"|"+num+"|"+type+"|"+clr+"|"+time+"|";
 			}		
 		}
-		catch(Exception e){}
+		catch(Exception e){
+			System.out.println("SQLException: " + e.getMessage());
+		}
 		return st;		
 	}
 	
